@@ -18,6 +18,8 @@ z = input()
 # Convert input to input
 number = int(z)
 
-# Output
-print('Your result:', z)
-print('The correct result:', c)
+if number == c:
+    print(number, 'is correct.')
+else:
+    print(number, 'is wrong.')
+    print('Correct result:', c)
