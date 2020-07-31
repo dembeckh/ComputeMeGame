@@ -18,8 +18,15 @@ z = input()
 # Convert input to input
 number = int(z)
 
+# Assessment
 if number == c:
     print(number, 'is correct.')
+elif number < 0 or number > 100:
+    print(number, 'is soooo wrong')
+elif c-1 <= number <= c+1:
+    print(number, 'is very close.')
 else:
     print(number, 'is wrong.')
-    print('Correct result:', c)
+
+# End
+print('Correct result:', c)
