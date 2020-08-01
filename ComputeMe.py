@@ -9,24 +9,28 @@ a = random.randint(1,10)
 b = random.randint(1,10)
 c = a + b
 
-print('The task:', a, '+', b)
+# for loop
+for i in range(4):
+    print('The task:', a, '+', b)
 
-# Input
-print('Please enter your result:')
-z = input()
+    # Input
+    print('Please enter your result:')
+    z = input()
 
-# Convert input to input
-number = int(z)
+    # Convert input to input
+    number = int(z)
 
-# Assessment
-if number == c:
-    print(number, 'is correct.')
-elif number < 0 or number > 100:
-    print(number, 'is soooo wrong')
-elif c-1 <= number <= c+1:
-    print(number, 'is very close.')
-else:
-    print(number, 'is wrong.')
+    # Assessment
+    if number == c:
+        print(number, 'is correct.')
+        # Cancel loop
+        break
+    elif number < 0 or number > 100:
+        print(number, 'is soooo wrong')
+    elif c-1 <= number <= c+1:
+        print(number, 'is very close.')
+    else:
+        print(number, 'is wrong.')
 
 # End
 print('Correct result:', c)
