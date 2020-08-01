@@ -9,16 +9,12 @@ a = random.randint(1,10)
 b = random.randint(1,10)
 c = a + b
 
+print('The task:', a, '+', b)
+
 # for loop
-for i in range(4):
-    print('The task:', a, '+', b)
-
-    # Input
-    print('Please enter your result:')
-    z = input()
-
-    # Convert input to input
-    number = int(z)
+for attempt in range(1,10):
+        # Input
+    number = int(input('Please enter your result:'))
 
     # Assessment
     if number == c:
@@ -34,3 +30,4 @@ for i in range(4):
 
 # End
 print('Correct result:', c)
+print('Number attempts', attempt)
