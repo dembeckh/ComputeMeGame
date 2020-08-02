@@ -8,12 +8,21 @@ random.seed()
 a = random.randint(1,10)
 b = random.randint(1,10)
 c = a + b
-
 print('The task:', a, '+', b)
 
-# for loop
-for attempt in range(1,10):
-        # Input
+# Initialising loop
+number = c + 1
+
+# Initialising attempts
+attempt = 0
+
+# while loop
+while number != c:
+
+    # Number attempts
+    attempt += 1
+
+    # Input
     number = int(input('Please enter your result:'))
 
     # Assessment
@@ -30,4 +39,4 @@ for attempt in range(1,10):
 
 # End
 print('Correct result:', c)
-print('Number attempts', attempt)
+print('Number attempts:', attempt)
