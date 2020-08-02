@@ -22,8 +22,12 @@ while number != c:
     # Number attempts
     attempt += 1
 
-    # Input
-    number = int(input('Please enter your result:'))
+    # Input with exception handling
+    try:
+        number = int(input('Please enter your result:'))
+    except:
+        print('You did not enter an integer.')
+        continue
 
     # Assessment
     if number == c:
